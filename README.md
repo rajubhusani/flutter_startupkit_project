@@ -1,4 +1,4 @@
-# flutter_template_project
+# flutter_startupkit_project
 
 A new Flutter Startup Kit project.
 
