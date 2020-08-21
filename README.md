@@ -1,6 +1,6 @@
 # flutter_template_project
 
-A new Flutter project.
+A new Flutter Startup Kit project.
 
 ## Getting Started
 
