@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => _bloc.fabClick(),
+        onPressed: () => _bloc.btnClick(),
         child: Icon(Icons.send),
       ),
     );

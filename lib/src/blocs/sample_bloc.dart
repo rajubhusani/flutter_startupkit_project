@@ -8,7 +8,7 @@ class SampleBloc extends Bloc {
 
   Stream<dynamic> get sampleStream => _controller.stream;
 
-  void fabClick() {
+  void btnClick() {
     DeviceDetails.fromPlatform
         .then((value) => _controller.sink.add("App Name::: "+value.appName));
   }
