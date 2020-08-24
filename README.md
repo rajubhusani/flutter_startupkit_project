@@ -6,14 +6,11 @@ A new Flutter Startup Kit project.
 
 This startup kit explaining about the following features,
 
-   *  Project Structure
    *  BLOC Pattern
    *  State Provider Pattern
    *  Router - Navigations
    *  Localization support
    *  Build configurations
-
-### Project Structure
 
 ### BLOC Pattern
 
@@ -150,5 +147,4 @@ To build the Android application for specific environment using Command line too
 ```
 flutter build apk lib/main_prod.dart
 ```
-
 
