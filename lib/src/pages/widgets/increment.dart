@@ -7,9 +7,10 @@ class Increment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final CounterBloc counterBloc = Provider.of<CounterBloc>(context);
-    return RaisedButton.icon(onPressed: () => counterBloc.incrementClick(),
-    icon: Icon(Icons.add),
-    label: Text(AppLocalizations.of(context).translate("add_txt")),
+    return RaisedButton.icon(
+      onPressed: () => {counterBloc.incrementClick()},
+      icon: Icon(Icons.add),
+      label: Text(AppLocalizations.of(context).translate("add_txt")),
     );
   }
 }

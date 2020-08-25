@@ -11,9 +11,8 @@ class AppLocalizations {
 
   // Helper method to keep the code in the widgets concise
   // Localizations are accessed using an InheritedWidget "of" syntax
-  static AppLocalizations of(BuildContext context) {
-    return Localizations.of<AppLocalizations>(context, AppLocalizations);
-  }
+  static AppLocalizations of(BuildContext context) =>
+      Localizations.of<AppLocalizations>(context, AppLocalizations);
 
   // Static member to have a simple access to the delegate from the MaterialApp
   static const LocalizationsDelegate<AppLocalizations> delegate =
@@ -23,22 +22,20 @@ class AppLocalizations {
 
   Future<bool> load() async {
     // Load the language JSON file from the "locale" folder
-    String jsonString =
-        await rootBundle.loadString('assets/locale/${locale.languageCode}.json');
+    String jsonString = await rootBundle
+        .loadString('assets/locale/${locale.languageCode}.json');
     Map<String, dynamic> jsonMap =
         json.decode(jsonString) as Map<String, dynamic>;
 
-    _localizedStrings = jsonMap.map((key, value) {
-      return MapEntry(key, value.toString());
-    });
+    _localizedStrings = jsonMap.map((key, value) =>
+       MapEntry(key, value.toString())
+    );
 
     return true;
   }
 
   // This method will be called from every widget which needs a localized text
-  String translate(String key) {
-    return _localizedStrings[key];
-  }
+  String translate(String key) => _localizedStrings[key];
 }
 
 // LocalizationsDelegate is a factory for a set of localized resources
@@ -50,10 +47,7 @@ class _AppLocalizationsDelegate
   const _AppLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) {
-    // Include all of your supported language codes here
-    return ['en'].contains(locale.languageCode);
-  }
+  bool isSupported(Locale locale) => ['en'].contains(locale.languageCode);
 
   @override
   Future<AppLocalizations> load(Locale locale) async {

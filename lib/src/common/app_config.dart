@@ -42,7 +42,7 @@ class _Config {
   static const _ENV = "environment";
   static const _KEY_CODE = "keyCode";
 
-  static final String dev_server = "YOUR SERVER_INFO";
+  static final String dev_server = "https://reqres.in";
   static final String prod_server = "YOUR SERVER_INFO";
   static final String DEV = "/dev";
   static final String SIT = "/sit";

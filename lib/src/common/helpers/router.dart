@@ -14,14 +14,9 @@ class Router {
     }
   }
 
-  Route<bool> getRouter(Widget child) {
-    return MaterialPageRoute(
-      builder: (context) {
-        return MediaQuery(
-          child: child,
-          data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
-        );
-      },
-    );
-  }
+  Route<bool> getRouter(Widget child) => MaterialPageRoute(
+      builder: (context) => MediaQuery(
+            child: child,
+            data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+          ));
 }

@@ -7,9 +7,10 @@ class Decrement extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final CounterBloc counterBloc = Provider.of<CounterBloc>(context);
-    return RaisedButton.icon(onPressed: () => counterBloc.decrementClick(),
-    icon: Icon(Icons.remove),
-    label: Text(AppLocalizations.of(context).translate("remove_txt")),
+    return RaisedButton.icon(
+      onPressed: () => {counterBloc.decrementClick()},
+      icon: Icon(Icons.remove),
+      label: Text(AppLocalizations.of(context).translate("remove_txt")),
     );
   }
 }

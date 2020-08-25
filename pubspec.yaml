@@ -34,6 +34,8 @@ dependencies:
   # Device Details Plugins -> Device info, Package info, get Device IP, Jailbreak/Root Detection, Get Telephony Info
   flutter_device_details: ^0.0.1
   provider: ^4.3.2+1
+  connectivity: ^0.4.9+2
+  http: ^0.12.0+4
 
 dev_dependencies:
   flutter_test:
