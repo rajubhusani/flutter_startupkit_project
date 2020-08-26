@@ -1,6 +1,17 @@
 const int TIMEOUT = 20;
+
+//HTTP Header keys
 const String CONTENT_TYPE = "Content-type";
 const String ACCEPT = "Accept";
-const String sample_endpoint = "/api/users?page=1";
+
+//Service endpoints
+const String POSTS = "/posts/1";
 const String BASEURL = "baseUrl";
-const String SAMPLE = "sample";
+
+//Service Names
+const String SAMPLE = "posts";
+
+//ERROR CODES
+const int CONNECTION_TIMEOUT = 100;
+const int FORMAT_EXCEPTION = 101;
+const int NETWORK_ERROR = 102;

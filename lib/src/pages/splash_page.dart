@@ -10,6 +10,7 @@ class SplashPage extends StatefulWidget {
   _SplashPageState createState() => _SplashPageState();
 }
 
+//Splash Page in Flutter, you can use native splash screen
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {

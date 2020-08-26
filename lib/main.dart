@@ -16,14 +16,16 @@ void launchApp() {
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => MultiProvider(
+  Widget build(BuildContext context) =>
+      //State provider pattern, declare the providers
+      MultiProvider(
         providers: [
           ChangeNotifierProvider<CounterBloc>.value(value: CounterBloc())
         ],
         child: MaterialApp(
           title: 'Flutter Template App',
           navigatorKey: NavigationService.navigationKey,
-          supportedLocales: [Locale('en', 'US')],
+          supportedLocales: [Locale('en', 'US')], //Supported Locales
           debugShowCheckedModeBanner: false,
           localizationsDelegates: [
             AppLocalizations.delegate,
@@ -46,7 +48,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
-          onGenerateRoute: Router().generateRoute,
+          onGenerateRoute: Router().generateRoute, //Providing the routing for the application
         ),
       );
 }
