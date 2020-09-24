@@ -9,6 +9,7 @@ This startup kit explaining about the following features,
    *  BLOC Pattern
    *  State Provider Pattern
    *  Router - Navigations
+   *  Service Component
    *  Localization support
    *  Build configurations
 
@@ -103,6 +104,17 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     }
   }
 ```
+
+### Service Component
+
+This service component explains about how the application can communicate with backend REST API's, handling the server response and returning the result back to the Bloc.
+It has Service Invoker, Service Provider & APIStore. APIStore contains the services information which can invoke from the invoker, below is the sample request.
+
+```
+Future<dynamic> sampleService() async =>
+      await _invoker.makeRequest(SAMPLE, REQUESTTYPE.GET);
+```
+Service Invoker responsible for handling the exceptions NETWORK_ERROR, CONNECTION_TIMEOUT, FORMAT_EXCEPTION.
 
 ### Localization support
 
