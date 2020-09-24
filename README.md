@@ -12,6 +12,7 @@ This startup kit explaining about the following features,
    *  Service Component
    *  Localization support
    *  Build configurations
+   *  DeviceDetails
 
 ### BLOC Pattern
 
@@ -159,4 +160,15 @@ To build the Android application for specific environment using Command line too
 ```
 flutter build apk lib/main_prod.dart
 ```
+
+### DeviceDetails
+
+Flutter plugin project for the Native device essentials.
+
+Supported for both Android & iOS 
+Device Info
+Package Info
+Telephony Info
+Ip Info
+Jaibreak/Root detection
 
