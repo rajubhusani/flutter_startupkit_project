@@ -163,9 +163,8 @@ flutter build apk lib/main_prod.dart
 
 ### DeviceDetails
 
-Flutter plugin project for the Native device essentials.
+Flutter plugin project for the Native device essentials. Supported for both Android & iOS 
 
-* Supported for both Android & iOS 
 * Device Info
 * Package Info
 * Telephony Info
