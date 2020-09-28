@@ -165,10 +165,10 @@ flutter build apk lib/main_prod.dart
 
 Flutter plugin project for the Native device essentials.
 
-Supported for both Android & iOS 
-Device Info
-Package Info
-Telephony Info
-Ip Info
-Jaibreak/Root detection
+* Supported for both Android & iOS 
+* Device Info
+* Package Info
+* Telephony Info
+* Ip Info
+* Jaibreak/Root detection
 
